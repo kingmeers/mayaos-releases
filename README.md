@@ -3,16 +3,24 @@
 Drive every tab in every window of every Chrome profile you have open, from
 anywhere on **your own** Tailscale network.
 
-## Install from the terminal (macOS and Linux)
+## Install from the terminal
+
+macOS and Linux:
 
 ```sh
 curl -fsSL https://raw.githubusercontent.com/kingmeers/mayaos-releases/main/get.sh | sh
 ```
 
+Windows (PowerShell):
+
+```powershell
+irm https://raw.githubusercontent.com/kingmeers/mayaos-releases/main/get.ps1 | iex
+```
+
 One command: it picks the right build for your machine, installs it, and opens
 it. Run it again any time to upgrade. On macOS it also skips the unsigned-app
 right-click dance — a terminal download never gets the quarantine flag a
-browser sets. The script is [get.sh](get.sh), right here in this repo, if you
+browser sets. The scripts are [get.sh](get.sh) and [get.ps1](get.ps1), right here in this repo, if you
 want to read it first (you should — that goes for every `curl | sh` anyone
 offers you).
 
@@ -26,6 +34,7 @@ offers you).
 | macOS (Intel) | `MayaOS-*.dmg` |
 | Linux (portable) | `MayaOS-*.AppImage` — `chmod +x` and run |
 | Linux (Debian/Ubuntu/Mint) | `mayaos-gui_*.deb` |
+| Windows (x64) | `MayaOS-Setup-*.exe` — new and lightly tested |
 
 ## What happens when you open it
 
